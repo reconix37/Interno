@@ -1,0 +1,140 @@
+body::after {
+	content: "";
+	background-color: rgba(0, 0, 0, 0.5);
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: opacity 0.8s ease 0s;
+	pointer-events: none;
+	z-index: 149;
+}
+.popup-show body::after {
+	opacity: 1;
+}
+.popup {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	padding: 30px 10px;
+	transition: visibility 0.8s ease 0s;
+	visibility: hidden;
+	pointer-events: none;
+}
+.popup_show {
+	z-index: 150;
+	visibility: visible;
+	overflow: auto;
+	pointer-events: auto;
+}
+.popup_show .popup__content {
+	visibility: visible;
+	transform: scale(1);
+}
+.popup__wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 100%;
+	flex: 1 1 auto;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+.popup__content {
+	visibility: hidden;
+	transform: scale(0);
+	transition: transform 0.3s ease 0s;
+	background-color: #eee;
+	padding: rem(100) rem(0) rem(100) rem(0);
+	width: 100%;
+	max-width: 900px;
+	border-radius: 20px;
+	position: relative;
+	border-radius: rem(10);
+	.lock & {
+		visibility: visible;
+	}
+
+	.popup__close{
+		position: absolute;
+		top: 50px;
+		right: 50px;
+		width: rem(30);
+		height: rem(18);
+		cursor: pointer;
+		.popup__close span,
+			
+		&::before,&::after{
+			position: absolute;
+			right: 0;
+			top: 0;
+			height: 10%;
+			width: 100%;
+			transition: all 0.3s ease 0s;
+			background-color: #000;			
+		}
+		&::before{
+			content:'';
+			top: 6%;
+			transform: rotate(-45deg) translate(0px, -50%);
+		}
+		&::after{
+			content:'';
+			bottom: 50%;
+			transform: rotate(45deg) translate(0px, 46%);
+		}
+	}
+
+	.popup {
+
+	
+
+		&__close {
+		}
+
+		&__designs {
+		}
+}
+.designs-popup {
+
+	&__container {
+		display: flex;
+		gap: rem(20);
+		align-items: center;
+		justify-content: center;
+	}
+
+		&__iamge {
+			img{
+				max-width: rem(500);
+			}
+		}
+
+		&__body {
+			max-width: rem(400);
+		}
+
+		&__label {
+			font-size: rem(40);
+			margin-bottom: rem(15);
+		}
+
+		&__text {
+			margin-bottom: rem(10);
+		}
+}
+
+.designs {
+
+		&__button {
+		}
+}
+
+}

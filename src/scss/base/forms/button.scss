@@ -1,0 +1,48 @@
+//<BUTTONS (a.btn+tab)>
+// Снипет (HTML): btn
+
+.button {
+	display: inline-flex;
+	padding: 22px 45px 22px 34px;
+	font-weight: 400;
+	font-size: rem(18);
+	line-height: math.div(27 ,18 );
+	letter-spacing: 0.72px;
+	color: #FFFFFF;
+	background: #292F36;
+	border: 2px solid #292F36;
+	border-radius: rem(18);
+	position: relative;
+	transition: all 0.3s ease 0s;
+	
+	@media (max-width: em(400)){
+		  padding: rem(20) rem(45) rem(20) rem(30);
+	}
+	&::after{
+		content:'';
+		position: absolute;
+		width: rem(24);
+		height: rem(17);
+		flex: 0 0 rem(24);
+		background: url('@img/icon/arrow01.png') center right no-repeat;
+		right: 15px;
+		top: 26px;
+	}
+	@media (any-hover: hover) {
+		&:hover {
+			background-color: #3a444f;
+		}
+	}
+	&._fw {
+		width: 100%;
+
+}
+
+&_light{
+	background: #CDA274;
+	border: 2px solid #CDA274;
+	&:hover{
+		background-color: #775e43;
+	}
+}
+}

@@ -1,0 +1,771 @@
+//====================================================================================================
+.create {
+   position: relative;
+margin-bottom: rem(175);
+@media (max-width:em(932)){
+     margin-bottom: rem(100);
+}
+@media (max-width: em(680)){
+     margin-bottom: rem(60);
+}
+   &__container {
+      padding-top: rem(188);
+      padding-bottom: rem(260);
+      padding-left: rem(120);
+      @media (max-width: em(772)){
+           padding-left: rem(80);
+      }
+      @media (max-width: em(528)){
+           padding-left: rem(50);
+           padding-top: rem(100);
+           padding-bottom: rem(180);
+      }
+      @media (max-width: em(442)){
+           padding-bottom: rem(100);
+           padding-left: rem(20);
+      }
+
+   }
+
+   &__body {
+      position: relative;
+      z-index: 5;
+      max-width: rem(600);
+
+   }
+
+   &__title {
+      margin-bottom: rem(19);
+      @media (max-width: em(695)){
+           font-size: rem(50);
+      }
+      @media (max-width: em(400)){
+           font-size: rem(35);
+      }
+   }
+
+   &__text {
+      margin-bottom: rem(35);
+      @media (max-width: em(400)){
+           font-size: rem(16);
+      }
+   }
+
+   &__button {
+   }
+
+   &__image-ibg {
+      position: absolute;width: 100%;height: 100%;top: 0;left: 0;
+      @media (max-width: em(1121)){
+           opacity: 0.7;
+      }
+   }
+}
+//====================================================================================================
+
+.more {
+margin-bottom: rem(170);
+@media (max-width:em(932)){
+     margin-bottom: rem(100);
+}
+@media (max-width: em(680)){
+     margin-bottom: rem(60);
+}
+   &__container {
+      display: flex;
+      justify-content:space-between;
+      align-items: center;
+      @media (max-width: em(826)){
+           flex-wrap: wrap;
+           justify-content: center;
+      }
+   }
+
+   &__body {
+      max-width: rem(305);
+      text-align: center;
+      margin: 0px rem(10);
+      @media (max-width: em(826)){
+           margin-bottom: rem(20);
+      }
+      @media (max-width: em(680)){
+           margin-bottom: rem(20);
+           margin-right: rem(0);
+           margin-left: rem(0);
+      }
+   }
+
+   &__title {
+      font-family: 'DM Serif Display';
+      font-weight: 400;
+      font-size: rem(25);
+      line-height: math.div(39 ,25 );
+      letter-spacing: 0.22px;
+      color: #292F36;
+      margin-bottom: rem(17);
+      
+   }
+
+   &__text {
+      margin-bottom: rem(68);
+      @media (max-width: em(826)){
+           margin-bottom: rem(45);
+      }
+      @media (min-width:em(680)){
+           margin-bottom: rem(20);
+      }
+   }
+
+   &__button {
+      font-weight: 400;
+      font-size: rem(18);
+      line-height: math.div(27 ,18 );
+      letter-spacing: 0.36px;
+      color: #4D5053;
+      padding-right: rem(30);
+      background: url('@img/icon/arrow01.png') right center no-repeat;
+   }
+}
+
+//========================================================================================================================================================
+
+.designs {
+     margin-bottom: rem(140);
+     @media (max-width:em(826)){
+          margin-bottom: rem(100);
+     }
+     @media (max-width: em(680)){
+          margin-bottom: rem(60);
+     }
+     &__container {
+         display: flex;
+         align-items: center;
+         @media (max-width: em(932)){
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+         }
+     }
+
+     &__contact {
+          display: flex;
+          align-items: center;
+          margin-bottom: rem(50);
+          @media (max-width: em(932)){
+                 justify-content: center;
+                 align-items: center;
+          }
+          @media (max-width:$mobile){
+                margin-bottom: rem(30); 
+          }
+     }
+
+     &__body {
+          max-width: rem(531);
+          margin-right: rem(70);
+          @media (max-width: em(1321)){
+                 margin-right: rem(40);
+          }
+          @media (max-width: em(1048)){
+                 margin-right: rem(20);
+          }
+          @media (max-width: em(932)){
+                 margin-right: rem(0);
+          }
+         
+     }
+
+     &__title {
+          font-size: rem(50);
+          line-height: math.div(65 ,50 );
+          margin-bottom: rem(42);
+          @media (max-width: em(1138)){
+                 font-size: rem(40);
+          }
+          @media (max-width:$mobile){
+                margin-bottom: rem(21); 
+                font-size: rem(35);
+          }
+     }
+
+     &__text {
+          margin-bottom: rem(40);
+          @media (max-width:$mobile){
+                margin-bottom: rem(20); 
+          }
+     }
+
+     &__link {
+     }
+
+     &__phone {
+          font-weight: 400;
+          font-size: rem(24);
+          line-height: math.div(36 ,24 );
+          letter-spacing: 0.22px;
+          color: #4D5053;
+     }
+
+     &__phonebox{
+          margin-left: rem(20);
+     }
+
+     &__subphone {
+          font-weight: 400;
+          font-size: rem(22);
+          line-height: math.div(33 ,22 );
+          letter-spacing: 0.22px;
+          color: #4D5053;
+     }
+
+     &__button {
+         @media (max-width: em(932)){
+            margin-bottom: rem(20);
+         }
+     }
+
+     &__image{
+          padding: rem(10);
+          img{
+               @media (max-width: em(1024)){
+                      max-width: rem(500);
+               }
+               @media (max-width:em(513)){
+                     max-width: rem(350); 
+               }
+               @media (max-width:$mobileSmall){
+                     max-width: rem(300); 
+               }
+          }
+     }
+}
+
+//========================================================================================================================================================
+
+.thinks {
+     margin-bottom: rem(140);
+     @media (max-width:em(932)){
+          margin-bottom: rem(100);
+     }
+     @media (max-width: em(680)){
+          margin-bottom: rem(60);
+     }
+     @media (max-width:$mobileSmall){
+           margin-bottom: rem(30); 
+     }
+     &__container {
+     }
+
+     &__body {
+          background: #F4F0EC;
+          border-radius: rem(70);
+          padding: rem(103) rem(51) rem(121) rem(51);
+          @media (max-width:$mobile){
+                padding: rem(70) rem(30) rem(80) rem(30); 
+          }
+     }
+
+     &__title {
+          font-size: rem(45);
+          line-height: math.div(58 ,45 );
+          letter-spacing: 0.22px;
+          color: #292F36;
+          font-family: 'DM Serif Display';
+          margin:0 auto;
+          text-align: center;
+          max-width: rem(479);
+          margin-bottom: rem(47);
+          @media (max-width:$mobile){
+                font-size: rem(35); 
+          }
+     }
+
+     &__row {
+         display: flex;
+         align-items: center;
+         @media (max-width: em(1228)){
+            flex-wrap: wrap;
+            justify-content: center;
+            
+         }
+     }
+
+     &__column {
+          background: #FFFFFF;
+          border-radius: rem(30);
+          max-width: rem(354);
+          padding: rem(50) rem(75) rem(45) rem(35);
+          margin-right: rem(18);
+          
+          &:last-child{
+               margin-right: rem(0);
+          }
+          @media (max-width: em(1228)){
+                 margin-bottom: rem(20);
+                 &:last-child{
+                    margin-bottom: rem(0);
+                 }
+          }
+          @media (max-width: em(876)){
+                 margin-bottom: rem(20);
+                 &:last-child{
+                    margin-bottom: rem(20);
+                 }
+          }
+      @media (max-width: em(831)){
+            &:last-child{
+               margin-bottom: rem(0);
+            }
+            margin-right: rem(0);
+      }
+          @media (max-width:$mobile){
+                padding: rem(30) rem(45) rem(25) rem(20); 
+          }
+          @media (max-width: em(398)){
+                 padding: rem(25) rem(15) rem(20) rem(15);
+          }
+          @media (max-width:$mobileSmall){
+                text-align: center; 
+          }
+     }
+}
+.column {
+
+     &__header {
+          display: flex;
+          margin-bottom: rem(25);
+          align-items: center;
+          @media (max-width:$mobileSmall){
+                margin-bottom: rem(15); 
+          }
+     }
+
+     &__people{
+          margin-left: rem(20);
+          @media (max-width:$mobileSmall){
+                margin-left: rem(15); 
+          }
+     }
+
+     &__image {
+     }
+
+     &__name {
+          font-family: 'DM Serif Display';
+          font-size: rem(25);
+          line-height: math.div(38 ,25 );
+          letter-spacing: 0.22px;
+          color: #292F36;
+          @media (max-width: em(398)){
+                 font-size: rem(20);
+          }
+          
+     }
+
+     &__live {
+          font-size: rem(18);
+          line-height: math.div(27 ,18 );
+          letter-spacing: 0.22px;
+          color: #4D5053;
+          @media (max-width: em(380)){
+                 font-size: rem(16);
+          }
+     }
+
+     &__text {
+          font-size: rem(20);
+          line-height: math.div(30 ,20 );
+          letter-spacing: 0.22px;
+          color: #4D5053;
+     }
+}
+//========================================================================================================================================================
+
+.partners {
+     margin-bottom: rem(113);
+     @media (max-width:em(932)){
+          margin-bottom: rem(80);
+     }
+     @media (max-width: em(680)){
+          margin-bottom: rem(50);
+     }
+     @media (max-width:$mobile){
+           margin-bottom: rem(30); 
+     }
+     &__container {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: rem(40);
+          @media (max-width: em(788)){
+                 flex-wrap: wrap;
+                 justify-content: center;
+          }
+     }
+
+     &__image {
+          
+
+          &_01 {
+          }
+
+          &_02 {
+          }
+
+          &_03 {
+          }
+
+          &_04 {
+          }
+
+          &_05 {
+          }
+     }
+}
+//========================================================================================================================================================
+
+.projects {
+padding-bottom: rem(80);
+margin-bottom: rem(80);
+@media (max-width:$mobile){
+      padding-bottom: rem(40);
+      margin-bottom: rem(50); 
+}
+@media (max-width:$mobileSmall){
+      padding-bottom: rem(20);
+      margin-bottom: rem(20); 
+}
+     &__container {
+     }
+
+     &__title {
+          font-size: rem(47);
+          line-height: math.div(62 ,47 );
+          margin-bottom: rem(20);
+          @media (max-width:$mobileSmall){
+                font-size: rem(40); 
+          }
+     }
+
+     &__text {
+          margin-bottom: rem(71);
+          @media (max-width:$mobile){
+                margin-bottom: rem(30); 
+          }
+     }
+
+     &__header{
+          text-align: center;
+          margin:auto;
+          max-width: rem(786);
+     }
+
+     &__columns {
+         display: grid;
+         grid-template-columns: 2fr 2fr;
+          gap: rem(20);
+       @media (max-width: em(700)){
+           display: flex;
+           flex-direction: column;
+          align-items: center;
+       }
+     }
+
+     &__column {
+          position: relative;
+     }
+
+     &__image {
+          margin-bottom: rem(24);
+          img{
+               max-width: 100%;
+          }
+     }
+
+     &__subimage {
+          display: flex;
+          align-items: center;
+     }
+
+     &__body {
+          padding-right: rem(10);
+          flex: 1 1 auto;
+     }
+
+     &__label {
+          font-family: 'DM Serif Display';
+          font-size: rem(24);
+          line-height: math.div(38 ,24 );
+          letter-spacing: 0.22px;
+          color: #292F36;
+          @media (max-width: em(800)){
+                 font-size: rem(20);
+          }
+          @media (max-width:$mobileSmall){
+                font-size: rem(17); 
+          }
+     }
+
+     &__subtext {
+          font-size: rem(18);
+          @media (max-width:$mobileSmall){
+                font-size: rem(16); 
+          }
+     }
+
+     &__link {
+     }
+}
+//========================================================================================================================================================
+
+.achivments {
+     background: #F4F0EC;
+     padding-bottom: rem(150);
+     padding-top: rem(150);
+     margin-bottom: rem(143);
+     @media (max-width:em(932)){
+          margin-bottom: rem(100);
+          padding-bottom: rem(100);
+          padding-top: rem(100);
+     }
+     @media (max-width: em(680)){
+          margin-bottom: rem(60);
+          padding-bottom: rem(60);
+          padding-top: rem(60);
+     }
+     @media (max-width:$mobile){
+           margin-bottom: rem(30); 
+           padding-bottom: rem(30);
+           padding-top: rem(30);
+     }
+     &__container {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          overflow: hidden;
+          flex-wrap: wrap;
+          gap: rem(20);
+          @media (max-width: em(727)){
+                 justify-content: center;
+          }
+     }
+
+     &__body {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          position: relative;
+          &::after{
+               content:'';
+               position: absolute;width: rem(1);height: rem(195);
+               background: #CDA274;
+               right:-100px;
+               @media (max-width: em(1200)){
+                      right: -80px;
+               }
+               @media (max-width: em(1070)){
+                      right: -60px;
+               }
+               @media (max-width: em(970)){
+                      right: -40px;
+               }
+               @media (max-width: em(840)){
+                      right: -20px;
+               }
+             @media (max-width: em(750)){
+                 right: -10px;
+             }
+             @media (max-width: em(727)){
+                 display: none;
+             }
+          }
+     }
+
+     &__number {
+          font-family: 'DM Serif Display';
+          font-size: rem(85);
+          line-height: math.div(128 ,85 );
+          letter-spacing: 1.7px;
+          color: #CDA274;
+     }
+
+     &__text {
+     }
+}
+//========================================================================================================================================================
+
+.blog {
+     margin-bottom: rem(113);
+     @media (max-width:em(932)){
+          margin-bottom: rem(80);
+     }
+     @media (max-width: em(680)){
+          margin-bottom: rem(50);
+     }
+     @media (max-width:$mobile){
+           margin-bottom: rem(30); 
+     }
+
+     &__container {
+     }
+
+     &__header {
+          text-align: center;
+          margin:auto;
+          max-width: rem(589);
+     }
+
+     &__title {
+          font-size: rem(47);
+          line-height: math.div(62 ,47 );
+          margin-bottom: rem(20);
+          @media (max-width:$mobileSmall){
+                font-size: rem(40); 
+          }
+     }
+
+     &__text {
+          margin-bottom: rem(71);
+          @media (max-width:$mobile){
+                margin-bottom: rem(30); 
+          }
+     }
+
+     &__columns {
+          display: grid;
+          grid-template-columns: 2fr 2fr 2fr;
+           gap: rem(20);
+        @media (max-width: em(1200)){
+          grid-template-columns: 2fr 2fr ;
+        }
+        @media (max-width: em(633)){
+          grid-template-columns: 2fr  ;
+        }
+     }
+
+     &__column {
+          border: 1px solid #E7E7E7;
+          border-radius: rem(62);
+          padding: rem(21) rem(21) rem(41) rem(21);
+     }
+
+     &__image {
+          position: relative;
+          margin-bottom: rem(15);
+          text-align: center;
+          img{
+               width: 100%;
+          }
+     }
+
+     &__subimage {
+          display: flex;
+          align-items: center;
+     }
+
+     &__label {
+          font-family: 'DM Serif Display';
+          font-size: rem(25);
+          line-height: math.div(35 ,25 );
+          letter-spacing: 0.5px;
+          color: #292F36;
+          margin-bottom: rem(20);
+          @media (max-width: em(790)){
+                 font-size: rem(20);
+          }
+          @media (max-width: em(633)){
+                 font-size: rem(25);
+          }
+          @media (max-width:$mobileSmall){
+                font-size: rem(19); 
+                margin-bottom: rem(10);
+          }
+     }
+
+     &__body {
+          flex: 1 1 auto;
+     }
+
+     &__subtext {
+          font-size: rem(16);
+          line-height: math.div(24 ,16 );
+          letter-spacing: 0.22px;
+          color: #4D5053;
+     }
+
+     &__link{
+
+     }
+}
+.image-blog {
+
+     &__text {
+          font-size: rem(16);
+          line-height: math.div(24 ,16 );
+          letter-spacing: 0.22px;
+          color: #4D5053;
+          background: #FFFFFF;
+          border-radius: 8px 8px 8px 0px;
+          padding: rem(10);
+          position: absolute;width: rem(130);height: rem(44);bottom: 24px;left: 24px;
+          &_big{
+               position: absolute;width:rem(150);height: rem(44);bottom:24px;left: 24px;
+              
+          }
+     }
+
+     
+}
+
+//========================================================================================================================================================
+
+.join {
+     margin-bottom: rem(113);
+     @media (max-width:em(932)){
+          margin-bottom: rem(80);
+     }
+     @media (max-width: em(680)){
+          margin-bottom: rem(50);
+     }
+     @media (max-width:$mobile){
+           margin-bottom: rem(30); 
+     }
+     &__container {
+          background: #292F36;
+          border-radius: rem(70);
+          text-align: center;
+          padding-top: rem(100);
+          padding-bottom: rem(90);
+          @media (max-width:$mobile){
+               padding-top: rem(80);
+               padding-bottom: rem(70);
+          }
+          @media (max-width:$mobileSmall){
+               padding-top: rem(50);
+               padding-bottom: rem(50); 
+          }
+     }
+
+     &__title {
+          font-family: 'DM Serif Display';
+          font-size: rem(50);
+          line-height: math.div(75 ,50 );
+          letter-spacing: 0.22px;
+          color: #FFFFFF;
+          margin-bottom: rem(10);
+     }
+
+     &__text {
+          color: #FFFFFF;
+          margin-bottom: rem(31);
+     }
+
+     &__button {
+     }
+}
+
+//========================================================================================================================================================
+
+
+
